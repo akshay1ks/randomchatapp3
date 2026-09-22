@@ -1,0 +1,75 @@
+:root {
+  --paper: #F7F1EA;
+  --sand: #EADFD2;
+  --ink: #1F1A17;
+  --muted: #6B5F57;
+  --vermilion: #E0412B;
+  --vermilion-dark: #B8301D;
+  --marigold: #F4A81D;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.welcome {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(244, 168, 29, 0.22), transparent 55%),
+    radial-gradient(circle at 50% 95%, rgba(224, 65, 43, 0.12), transparent 60%),
+    var(--paper);
+}
+
+.welcome-inner {
+  max-width: 34rem;
+}
+
+.kicker {
+  margin: 0;
+  font-family: var(--body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.brand {
+  margin: 0.4em 0 0;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(3rem, 15vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.brand span {
+  color: var(--vermilion);
+}
+
+.tagline {
+  margin: 1.1em 0 0;
+  font-size: clamp(1.125rem, 4vw, 1.5rem);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.tagline strong {
+  color: var(--vermilion-dark);
+  font-weight: 600;
+}
